@@ -1,6 +1,6 @@
 {
-  "name": "bbw-vue-ui-plugins",
-  "version": "1.0.4",
+  "name": "hl-vue-ui",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/index.js",
   "scripts": {

@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 import app from './app';
 import hlUi from 'main/index.js';
 import routes from './router/index';
-console.log('hlui', hlUi);
 
 Vue.use(hlUi);
 Vue.use(VueRouter);

@@ -1,5 +1,5 @@
 <template>
-  <transition name="el-alert-fade">
+  <transition>
     <div class="alert">alert, 111</div>
   </transition>
 </template>
