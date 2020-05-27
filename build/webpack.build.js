@@ -9,10 +9,13 @@ module.exports = merge(base, {
     app: ['./src/index.js']
   },
   output: {
-    path: path.resolve(process.cwd(), './dist'),
+    path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
     filename: 'index.js',
     chunkFilename: '[id].js',
+    library: 'hl-vue-ui',
+    libraryExport: 'default',
+    libraryTarget: 'commonjs2',
   },
   plugins: [
     new CleanWebpackPlugin()

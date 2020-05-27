@@ -1,7 +1,7 @@
-import Alerts from '../packages/alert/index.js';
+import Alert from '../packages/alert/index.js';
 
 const components = [
-  Alerts,
+  Alert,
 ]
 
 const install = function(Vue, opts = {}) {
@@ -17,5 +17,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Alerts
+  Alert
 }

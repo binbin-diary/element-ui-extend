@@ -7,7 +7,7 @@ module.exports = merge(base, {
   mode: 'production',
   entry: Components,
   output: {
-    path: path.resolve(process.cwd(), './dist'),
+    path: path.resolve(process.cwd(), './lib'),
     publicPath: '/dist/',
     filename: '[name].js',
     chunkFilename: '[id].js',
