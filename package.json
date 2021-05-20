@@ -1,0 +1,49 @@
+{
+  "name": "hl-element-ui-extend",
+  "version": "1.0.0",
+  "description": "element-ui-extend",
+  "files": [
+    "lib",
+    "src",
+    "packages"
+  ],
+  "main": "lib/index.common.js",
+  "private": false,
+  "scripts": {
+    "build": "npm run clean && webpack --config build/webpack.build.js",
+    "clean": "rimraf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binbin-diary/element-ui-extend.git"
+  },
+  "author": "binbin_wu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/binbin-diary/element-ui-extend/issues"
+  },
+  "homepage": "https://github.com/binbin-diary/element-ui-extend#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^5.2.4",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.7",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  }
+}
