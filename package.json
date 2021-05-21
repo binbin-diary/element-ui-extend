@@ -1,6 +1,6 @@
 {
   "name": "hl-element-ui-extend",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "element-ui-extend",
   "files": [
     "lib",
@@ -10,7 +10,7 @@
   "main": "lib/index.common.js",
   "private": false,
   "scripts": {
-    "build": "npm run clean && webpack --config build/webpack.build.js",
+    "build": "npm run clean && webpack --config build/webpack.build.js && webpack --config build/webpack.component.js",
     "clean": "rimraf lib"
   },
   "repository": {

@@ -1,9 +1,10 @@
 // const components = [];
-// const componentFiles = require.context(
-//   '../packages',
-//   true,
-//   /\.\/[\w-]+\/index\.js$/
-// );
+const componentFiles = require.context(
+  '../packages',
+  true,
+  /\.\/[\w-]+\/index\.js$/
+);
+console.log('componentFiles', componentFiles);
 
 // componentFiles.keys().reduce((component, componentPath) => {
 //   const value = componentFiles(componentPath);
