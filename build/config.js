@@ -1,4 +1,18 @@
-const path = require('path');
+var path = require('path');
+var nodeExternals = require('webpack-node-externals');
+var Components = require('../components.json');
+
+var externals = {};
+
+Object.keys(Components).forEach(function(key) {
+  externals[`element-ui-extend/packages/${key}`] = `element-ui-extend/lib/${key}`;
+});
+
+externals = [Object.assign({
+  vue: 'vue'
+}, externals), nodeExternals()];
+
+exports.externals = externals;
 
 exports.alias = {
   main: path.resolve(__dirname, '../src'),

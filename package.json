@@ -1,6 +1,6 @@
 {
   "name": "hl-element-ui-extend",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "element-ui-extend",
   "files": [
     "lib",
@@ -44,6 +44,7 @@
     "vue-loader": "^15.9.7",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.7",
+    "webpack-node-externals": "^3.0.0"
   }
 }
