@@ -5,13 +5,13 @@ export default {
   name: 'DebounceButton',
   props: {
     delay: {
-      type: Number,
-      default: 300,
+        type: Number,
+        default: 300,
     },
   },
   methods: {
     handlerClick(e) {
-      this.$emit('click', e);
+        this.$emit('click', e);
     },
   },
   render() {
