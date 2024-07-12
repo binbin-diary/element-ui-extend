@@ -11,6 +11,7 @@
   "private": false,
   "scripts": {
     "build": "npm run clean && webpack --config build/webpack.build.js && webpack --config build/webpack.component.js",
+    "prepare": "is-ci || husky install",
     "clean": "rimraf lib"
   },
   "repository": {
@@ -36,6 +37,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^5.2.4",
+    "husky": "^9.0.11",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^15.2.7",
     "progress-bar-webpack-plugin": "^2.1.0",
     "rimraf": "^3.0.2",
     "style-loader": "^2.0.0",
@@ -46,5 +50,10 @@
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
     "webpack-node-externals": "^3.0.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "npx prettier --write"
+    ]
   }
 }
